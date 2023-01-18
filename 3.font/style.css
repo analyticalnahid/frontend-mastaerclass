@@ -1,0 +1,21 @@
+.firstDiv{
+    background-color: #e29f9f;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#firstId{
+    background-color: #d8f533;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+li a{
+    color: rgb(192, 33, 33);
+    text-decoration: none;
+}
+
+p{
+    font-size: medium;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+}

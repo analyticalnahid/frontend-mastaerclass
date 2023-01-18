@@ -1,0 +1,32 @@
+
+body{
+    background-color: #030f47;
+    text-align: center;
+    color: aliceblue;
+    border: 30px solid #2baa79;
+    border-top: 0px;
+    margin: 0px;
+}
+
+p{
+    text-align: left;
+    padding-top: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+form{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#subbutton{
+    background-color: #FF9F1C;
+    height: 80px;
+    width: 150px;
+    margin: 4px;
+    margin-top: 12px;
+    font-size: 1em;
+    border-radius: 20px;
+}
+

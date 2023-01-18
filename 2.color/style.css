@@ -1,0 +1,28 @@
+
+/* selected tag{
+    property: value;
+   }
+
+   External CSS
+*/
+
+p{
+    color: rgb(176, 179, 39);       /* The CSS color property defines the text color to be used. */   
+    font-size: medium;                /* The CSS font-size property defines the size of the font. */
+    font-family: 'Lucida Sans';       /* The CSS font-family property defines the font family to be used. */
+    font-weight: bold;                /* The CSS font-weight property defines the weight of the font. */
+    text-align: center;               /* The CSS text-align property defines the horizontal alignment of text in an element. */
+    text-decoration: underline;       /* The CSS text-decoration property defines the decoration added to text. */
+    text-transform: uppercase;        /* The CSS text-transform property specifies how to capitalize an element's text. */
+    background-color: rgb(0, 0, 0); /* The CSS background-color property defines the background color of an element. */  
+}
+
+
+
+li{
+    color: #831d1d;
+}
+
+h4{
+    color: rgba(rgb(173, 92, 92), rgb(69, 197, 69), rgb(122, 122, 236), 0.4);
+}
