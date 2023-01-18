@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Event</title>
+</head>
+<body>
+    
+<!-- onclick: This event occurs when an element is clicked.  -->
+<button onclick="alert('Button clicked!')">Click me</button>
+
+
+<!-- onmouseover: This event occurs when the mouse pointer is moved over an element.  -->
+<p onmouseover="this.style.color='red'">Move your mouse over me!</p>
+
+
+<!-- onmouseout: This event occurs when the mouse pointer is moved out of an element. -->
+<p onmouseout="this.style.background='red'">Move your mouse over me, then out of me!</p>
+
+
+<!-- onmousedown: This event occurs when a mouse button is pressed down on an element. -->
+<button onmousedown="alert('Mouse button pressed!')">Click me</button>
+
+
+<!-- onmouseup: This event occurs when a mouse button is released over an element.  -->
+<button onmouseup="alert('Mouse button released!')">Click me</button>
+
+
+<!-- oncontextmenu: This event occurs when the right mouse button is clicked on an element. -->
+<div oncontextmenu="alert('Right mouse button clicked!')">Right-click me!</div>
+
+
+<!-- ondblclick: This event occurs when an element is double-clicked. -->
+<p ondblclick="alert('Element double-clicked!')">Double-click me!</p>
+
+
+<!-- onload: This event occurs when an element has finished loading. -->
+<body onload="alert('Page has finished loading!')">
+
+
+<!-- onchange: This event occurs when the content of an element has been changed.     -->
+<input type="text" onchange="alert('Text changed!')">
+
+
+<!-- onsubmit: This event occurs when a form is submitted. -->
+<form onsubmit="alert('Form submitted!')">
+    <input type="text">
+    <input type="submit">
+</form>
+
+
+<!-- onfocus: This event occurs when an element receives focus -->
+<input type="text" onfocus="alert('Element has focus!')">
+
+
+<!-- onblur: This event occurs when an element loses focus. -->
+<input type="text" onblur="alert('Element lost focus!')">
+
+
+<!-- onkeydown: This event occurs when a keyboard key is first pressed down. -->
+<input type="text" onkeydown="alert('Key pressed!')">
+
+
+<!-- onkeyup: This event occurs when a keyboard key is released. -->
+<input type="text" onkeyup="alert('Key released!')">
+
+
+
+</body>
+</html>

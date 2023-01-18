@@ -1,0 +1,278 @@
+
+<!-- The <form> Element 
+An HTML form is used to collect user input. The user input is most often sent to a server 
+for processing. The <form> element is a container for different types of input elements, 
+such as: text fields, checkboxes, radio buttons, submit buttons, etc. 
+-->
+
+<!-- The <form> Attributes 
+
+The action Attribute
+The action attribute defines the action to be performed when the form is submitted.Usually 
+The action attribute specifies where to send the form-data when a form is submitted If the 
+action attribute is omitted, the action is set to the current page..
+
+
+The target Attribute
+The target attribute specifies where to display the response that is received after submitting the form.
+_blank 	->  The response is displayed in a new window or tab
+_self 	->  The response is displayed in the current window
+_parent ->	The response is displayed in the parent frame
+_top 	->  The response is displayed in the full body of the window
+framename ->	The response is displayed in a named iframe
+
+
+The method Attribute
+The method attribute specifies the HTTP method to be used when submitting the form data.The 
+form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").
+Notes on GET:
+    Appends the form data to the URL, in name/value pairs
+    NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)
+    The length of a URL is limited (2048 characters)
+    Useful for form submissions where a user wants to bookmark the result
+    GET is good for non-secure data, like query strings in Google
+
+Notes on POST:
+    Appends the form data inside the body of the HTTP request (the submitted form data is not shown in the URL)
+    POST has no size limitations, and can be used to send large amounts of data.
+    Form submissions with POST cannot be bookmarked
+
+
+The autocomplete Attribute
+The autocomplete attribute specifies whether or not the autocomplete feature should be enabled when the user is entering text.
+When autocomplete is on, the browser automatically complete values based on values that the user has entered befor
+
+The novalidate Attribute
+The novalidate attribute specifies that the form-data should not be validated when submitted.
+
+<label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email"><br><br>
+  <input type="submit">
+</form>
+
+The name Attribute
+The name attribute specifies the name of a form.
+-->
+
+
+
+
+
+ <!-- The <input> Element
+An <input> element can be displayed in many ways, depending on the type attribute. -->
+
+<form>
+    <input type="text" id="ffname" name="fname">
+</form>
+
+<!--  The <input> Element Attributes
+The name Attribute 
+Each input field must have a name attribute to be submitted.If the name attribute is omitted, 
+the value of the input field will not be sent at all. 
+
+The value Attribute
+The value attribute specifies the default value of an input field.
+
+The placeholder Attribute
+The placeholder attribute specifies a short hint that describes the expected value of an input field
+
+The required Attribute
+The required attribute specifies that an input field must be filled out before submitting the form.
+
+The readonly Attribute
+The readonly attribute specifies that an input field is read-only (cannot be changed).
+
+The disabled Attribute
+The disabled attribute specifies that an input field should be disabled.
+
+The autofocus Attribute
+The autofocus attribute specifies that an input field should automatically get focus when the page loads.
+
+The autocomplete Attribute
+The autocomplete attribute specifies whether or not an input field should have autocomplete enabled.
+
+The size Attribute
+The size attribute specifies the width, in characters, of an <input> element.
+
+The maxlength Attribute
+The maxlength attribute specifies the maximum number of characters allowed in an <input> element.
+
+The pattern Attribute
+The pattern attribute specifies a regular expression that an <input> element's value is checked against.
+
+The min and max Attributes
+The min and max attributes can be used with the following input types: number, range, date, datetime-local, month, time, and week.
+
+The step Attribute
+The step attribute specifies the legal number intervals for an input field.
+
+The list Attribute
+The list attribute specifies a list of pre-defined options for an input field.
+
+The multiple Attribute
+The multiple attribute specifies that a user can enter more than one value in an input field.
+
+The input Type Attribute
+The type attribute specifies the type <input> element to display.
+-->
+
+<form action="/action_page.php">
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" value="Nahidul"><br><br>
+    <input type="submit" value="Done">
+</form> 
+
+
+<!-- 
+    The <label> Element
+The <label> tag defines a label for many form elements. 
+The for attribute of the <label> tag should be equal to the id attribute of the <input> element 
+to bind them together.     
+-->
+
+
+<form>
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname">
+</form>
+
+
+<!-- The <select> Element
+The <select> element defines a drop-down list    
+    
+    The <select> element Attribute
+The <option> element defines an option in a drop-down list.
+    
+    The selected Attribute
+The selected attribute specifies that an option should be pre-selected when the page loads.    
+
+    The size Attribute
+The size attribute specifies the visible number of options in a drop-down list.
+
+    The mutliple Attribute
+The multiple attribute specifies that the user is allowed to select more than one option at a time.
+
+-->
+
+<form>
+    <label for="cars">Choose a car:</label>
+    <select id="cars" name="cars" size="3" multiple>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+<input type="submit">
+
+
+<!-- The <textarea> Element
+The <textarea> element defines a multi-line input control (text area).
+    
+The <textarea> Element Attributes
+    The cols Attribute
+The cols attribute specifies the visible width of a text area.
+
+    The rows Attribute
+The rows attribute specifies the visible number of lines in a text area.
+
+    The wrap Attribute
+The wrap attribute specifies how the text in a text area is to be wrapped when submitted in a form.
+
+-->
+
+<form>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" cols="50">
+    The cat was playing in the garden.
+    </textarea>
+</form>
+
+<!-- The <button> Element
+The <button> element defines a clickable button.
+    
+    The <button> Element Attributes
+The type Attribute
+The type attribute specifies the type of button.
+    
+    The value Attribute
+The value attribute specifies the value to be sent to a server when a form is submitted.
+        
+    The formaction Attribute
+The formaction attribute specifies where to send the form-data when a form is submitted.
+
+    The formenctype Attribute 
+The formenctype attribute specifies how form-data should be encoded when submitting it to the server (only for type="submit" and type="image").
+
+    The formmethod Attribute
+The formmethod attribute specifies how to send form-data (only for type="submit" and type="image").
+
+    The formnovalidate Attribute        
+The formnovalidate attribute specifies that the form-data should not be validated on submission.
+
+    The formtarget Attribute
+The formtarget attribute specifies where to display the response after submitting the form (only for type="submit" and type="image").
+
+-->
+
+<form>
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+</form>
+ 
+<!-- The <fieldset> and <legend> Elements    
+The <fieldset> element is used to group related data in a form.
+The <legend> element defines a caption for the <fieldset> element. -->
+
+<form>
+    <fieldset>
+        <legend>Personalia:</legend>
+        Name: <input type="text"><br>
+        E-mail: <input type="text"><br>
+        Date of birth: <input type="text">
+    </fieldset>
+</form>
+
+
+<!-- The <datalist> Element
+The <datalist> element specifies a list of pre-defined options for an <input> element.
+    
+    The selected Attribute
+The selected attribute specifies that an option should be pre-selected when the page loads.
+    
+    The size Attribute
+The size attribute specifies the visible number of options in a drop-down list.
+
+    The mutliple Attribute  
+The multiple attribute specifies that the user is allowed to select more than one option at a time.
+-->
+
+<form>
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">
+        <option value="Firefox">
+        <option value="Chrome">
+        <option value="Opera">
+        <option value="Safari">
+    </datalist>
+</form>
+
+
+<!-- The <output> Element
+The <output> element is used for the result of a calculation (like one performed by a script).
+    
+    The <output> Element Attributes
+    The for Attribute
+The for attribute of the <output> element should be equal to the id attribute of the <input> element to bind them together.
+        
+    The form Attribute
+The form attribute of the <output> element should be equal to the id attribute of the <form> element to bind them together.
+        
+    The name Attribute
+The name attribute specifies the name of an <output> element.
+-->
+
+<form>
+    <input type="number" id="numb">
+    <button type="button" onclick="myFunction()">Try it</button>
+    <p>Result: <output name="x" for="numb"></output></p>
+</form>
